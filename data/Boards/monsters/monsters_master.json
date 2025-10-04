@@ -75,6 +75,44 @@
         "sprite": "art/monsters/sand_brute.png",
         "rarity": "rare"
       }
+    },
+    {
+      "id": "monster_sand_wisp",
+      "name": "Sand Wisp",
+      "category": "wisp",
+      "stats": {
+        "maxHealth": 18,
+        "health": 18,
+        "attack": 4,
+        "armor": 1
+      },
+      "traits": [
+        {
+          "id": "trait_sand_veil",
+          "trigger": "onTurnStart",
+          "effect": { "gainDodge": 1 }
+        }
+      ],
+      "deck": {
+        "intents": [
+          { "id": "intent_sand_blast", "weight": 50 },
+          { "id": "intent_dust_shroud", "weight": 50 }
+        ]
+      },
+      "lootTable": {
+        "shards": { "min": 6, "max": 10 },
+        "cards": ["card_dreamcaster_03"],
+        "sigils": []
+      },
+      "spawn": {
+        "floors": [1],
+        "biomes": ["depths_of_arrival"],
+        "tags": ["wisp", "sand"]
+      },
+      "metadata": {
+        "sprite": "art/monsters/sand_wisp.png",
+        "rarity": "common"
+      }
     }
   ],
   "bosses": [
@@ -116,6 +154,40 @@
       ],
       "metadata": {
         "sprite": "art/monsters/sand_tyrant.png",
+        "rarity": "legendary"
+      }
+    },
+    {
+      "id": "boss_sand_tyrant_bow",
+      "name": "Sand Tyrant, Bow Aspect",
+      "stats": {
+        "maxHealth": 80,
+        "health": 80,
+        "attack": 18,
+        "armor": 4
+      },
+      "traits": [
+        { "id": "trait_winddraw_bow", "trigger": "onTurnStart", "effect": { "gainFocus": 1 } }
+      ],
+      "deck": {
+        "intents": [
+          { "id": "intent_sand_piercer", "weight": 60 },
+          { "id": "intent_gale_volley", "weight": 40 }
+        ]
+      },
+      "boss": {
+        "sigilRewardId": "sigil_eye_of_the_dunes",
+        "cardRewardSet": "elf_archer",
+        "unlockCardUpgrades": ["card_elf_archer_08_plus"]
+      },
+      "minionFactory": {
+        "spawnPool": ["monster_sand_wisp"],
+        "cooldown": 2,
+        "maxConcurrent": 3
+      },
+      "transformations": [],
+      "metadata": {
+        "sprite": "art/monsters/sand_tyrant_bow.png",
         "rarity": "legendary"
       }
     }
