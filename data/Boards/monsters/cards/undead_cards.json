@@ -1,0 +1,70 @@
+{
+  "family": "undead",
+  "attacks": [
+    {
+      "id": "attack_necrotic_bite",
+      "name": "Necrotic Bite",
+      "usedBy": ["monster_skeletal_giant_ant", "monster_skeletal_giant_ant_elite"],
+      "effect": {
+        "dealDamage": 8,
+        "applyStatus": { "decay": 2 }
+      }
+    },
+    {
+      "id": "attack_grave_cleave",
+      "name": "Grave Cleave",
+      "usedBy": ["monster_crypt_knight", "monster_crypt_knight_wraith"],
+      "effect": {
+        "dealDamage": 11,
+        "applyStatus": { "fracture": 1 }
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell_raise_minion",
+      "name": "Raise Minion",
+      "usedBy": ["monster_dread_lichling", "monster_dread_lichling_arch"],
+      "effect": {
+        "summon": "minion_skeletal_servitor",
+        "gainArmor": 2
+      }
+    },
+    {
+      "id": "spell_soul_shield",
+      "name": "Soul Shield",
+      "usedBy": ["monster_crypt_knight"],
+      "effect": {
+        "gainArmor": 8,
+        "cleanse": 1
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "item_grave_dust_vial",
+      "name": "Grave Dust Vial",
+      "dropsFrom": ["monster_plague_wisp", "monster_dread_lichling"],
+      "effect": {
+        "craftingIngredient": true,
+        "applyStatus": { "weaken": 1 }
+      }
+    }
+  ],
+  "minions": [
+    {
+      "id": "minion_skeletal_servitor",
+      "name": "Skeletal Servitor",
+      "summonedBy": "monster_dread_lichling",
+      "stats": { "maxHealth": 10, "attack": 4, "armor": 2 },
+      "abilities": ["bone_slash", "guard_master"]
+    },
+    {
+      "id": "minion_plague_spore",
+      "name": "Plague Spore",
+      "summonedBy": "monster_plague_wisp",
+      "stats": { "maxHealth": 6, "attack": 3, "armor": 0 },
+      "abilities": ["disease_cloud", "explode_decay"]
+    }
+  ]
+}

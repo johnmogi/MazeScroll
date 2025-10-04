@@ -1,0 +1,46 @@
+{
+  "middles": [
+    {
+      "id": "middle_echo_confluence",
+      "title": "Echo Confluence",
+      "text": [
+        "Interlocking corridors converge around a pool of prismatic water.",
+        "Visions from other runs ripple across its surface, offering cryptic guidance."],
+      "tags": ["echo", "guidance"],
+      "events": [
+        {
+          "type": "choice",
+          "options": [
+            {
+              "id": "option_drink",
+              "effect": { "restoreManaPercent": 0.2, "applyStatus": { "clairvoyance": 1 } }
+            },
+            {
+              "id": "option_observe",
+              "effect": { "revealRooms": 2 }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "middle_candy_heist",
+      "title": "Candy Heist",
+      "text": [
+        "A rascal Candy Burglar is mid-heist, stuffing sweets into bottomless pockets.",
+        "You can challenge the thief, bargain, or simply enjoy the show."],
+      "tags": ["oddity", "humor"],
+      "events": [
+        {
+          "type": "combat",
+          "monsterId": "monster_candy_burglar"
+        },
+        {
+          "type": "reward",
+          "items": ["item_sugar_crystal"],
+          "conditions": { "choice": "bargain" }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "family": "insects",
+  "attacks": [
+    {
+      "id": "attack_acidic_gnaw",
+      "name": "Acidic Gnaw",
+      "usedBy": ["monster_swarm_termite", "monster_swarm_termite_skeletal"],
+      "effect": {
+        "dealDamage": 7,
+        "applyStatus": { "corrode": 2 }
+      }
+    },
+    {
+      "id": "attack_web_lance",
+      "name": "Web Lance",
+      "usedBy": ["monster_silkspider", "monster_silkspider_dream"],
+      "effect": {
+        "dealDamage": 6,
+        "applyStatus": { "entangle": 1 }
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell_swarm_split",
+      "name": "Swarm Split",
+      "usedBy": ["monster_swarm_termite"],
+      "effect": {
+        "summon": "minion_termite_swarmling",
+        "dealDamage": 3
+      }
+    },
+    {
+      "id": "spell_crystal_shell",
+      "name": "Crystal Shell",
+      "usedBy": ["monster_giant_beetle_crystal"],
+      "effect": {
+        "gainArmor": 6,
+        "reflectDamage": 4
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "item_chitin_fragment",
+      "name": "Chitin Fragment",
+      "dropsFrom": ["monster_giant_beetle", "monster_giant_beetle_crystal"],
+      "effect": {
+        "craftingIngredient": true,
+        "upgradeBoost": { "armor": 1 }
+      }
+    }
+  ],
+  "minions": [
+    {
+      "id": "minion_termite_swarmling",
+      "name": "Termite Swarmling",
+      "summonedBy": "monster_swarm_termite",
+      "stats": { "maxHealth": 6, "attack": 2, "armor": 0 },
+      "abilities": ["acid_nip", "merge_swarm"]
+    },
+    {
+      "id": "minion_spiderling",
+      "name": "Spiderling",
+      "summonedBy": "monster_silkspider",
+      "stats": { "maxHealth": 5, "attack": 3, "armor": 0 },
+      "abilities": ["web_sting", "assist_bind"]
+    }
+  ]
+}

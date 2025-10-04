@@ -1,0 +1,63 @@
+{
+  "family": "fae",
+  "attacks": [
+    {
+      "id": "attack_thorn_whip",
+      "name": "Thorn Whip",
+      "usedBy": ["monster_bramble_dryad", "monster_bramble_dryad_corrupted"],
+      "effect": {
+        "dealDamage": 7,
+        "applyStatus": { "bleed": 1, "slow": 1 }
+      }
+    },
+    {
+      "id": "attack_pixie_dart",
+      "name": "Pixie Dart",
+      "usedBy": ["monster_trickster_pixie", "monster_trickster_pixie_candy"],
+      "effect": {
+        "dealDamage": 5,
+        "applyStatus": { "distract": 1 }
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell_charm_glimmer",
+      "name": "Charm Glimmer",
+      "usedBy": ["monster_forest_courtier", "monster_forest_courtier_royal"],
+      "effect": {
+        "controlDuration": 1,
+        "reduceArmor": 2
+      }
+    },
+    {
+      "id": "spell_lure_light",
+      "name": "Lure Light",
+      "usedBy": ["monster_willow_wisp", "monster_willow_wisp_candle"],
+      "effect": {
+        "pull": 1,
+        "applyStatus": { "vulnerable": 1 }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "item_fae_glass_shard",
+      "name": "Fae Glass Shard",
+      "dropsFrom": ["monster_trickster_pixie", "monster_willow_wisp"],
+      "effect": {
+        "craftingIngredient": true,
+        "upgradeBoost": { "mana": 1 }
+      }
+    }
+  ],
+  "minions": [
+    {
+      "id": "minion_pixie_guard",
+      "name": "Pixie Guard",
+      "summonedBy": "monster_forest_courtier_royal",
+      "stats": { "maxHealth": 8, "attack": 3, "armor": 1 },
+      "abilities": ["fae_slash", "glitter_shield"]
+    }
+  ]
+}

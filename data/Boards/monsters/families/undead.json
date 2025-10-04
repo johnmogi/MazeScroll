@@ -1,0 +1,82 @@
+{
+  "family": "undead",
+  "description": "Reanimated remnants and cursed spirits bound to the Weaver's halls.",
+  "variants": [
+    {
+      "id": "monster_skeletal_giant_ant",
+      "name": "Skeletal Giant Ant",
+      "tags": ["undead", "insect"],
+      "forms": [
+        {
+          "id": "monster_skeletal_giant_ant",
+          "type": "undead",
+          "stats": { "maxHealth": 16, "attack": 5, "armor": 2 },
+          "abilities": ["necrotic_bite", "bone_dust_cloud"]
+        },
+        {
+          "id": "monster_skeletal_giant_ant_elite",
+          "type": "undead_elite",
+          "stats": { "maxHealth": 20, "attack": 6, "armor": 3 },
+          "abilities": ["grave_spines", "spirit_swarm"]
+        }
+      ]
+    },
+    {
+      "id": "monster_crypt_knight",
+      "name": "Crypt Knight",
+      "tags": ["armored", "melee"],
+      "forms": [
+        {
+          "id": "monster_crypt_knight",
+          "type": "undead",
+          "stats": { "maxHealth": 32, "attack": 8, "armor": 5 },
+          "abilities": ["grave_cleave", "soul_shield"]
+        },
+        {
+          "id": "monster_crypt_knight_wraith",
+          "type": "spirit",
+          "stats": { "maxHealth": 26, "attack": 7, "armor": 2 },
+          "abilities": ["phase_cleave", "torment_howl"]
+        }
+      ]
+    },
+    {
+      "id": "monster_plague_wisp",
+      "name": "Plague Wisp",
+      "tags": ["ranged", "poison"],
+      "forms": [
+        {
+          "id": "monster_plague_wisp",
+          "type": "wisp",
+          "stats": { "maxHealth": 18, "attack": 4, "armor": 0 },
+          "abilities": ["rot_burst", "disease_cloud"]
+        },
+        {
+          "id": "monster_plague_wisp_swarm",
+          "type": "swarm",
+          "stats": { "maxHealth": 14, "attack": 5, "armor": 0 },
+          "abilities": ["curse_link", "infectious_touch"]
+        }
+      ]
+    },
+    {
+      "id": "monster_dread_lichling",
+      "name": "Dread Lichling",
+      "tags": ["caster", "summoner"],
+      "forms": [
+        {
+          "id": "monster_dread_lichling",
+          "type": "undead",
+          "stats": { "maxHealth": 24, "attack": 6, "armor": 2 },
+          "abilities": ["bone_bolt", "raise_minion"]
+        },
+        {
+          "id": "monster_dread_lichling_arch",
+          "type": "undead_elite",
+          "stats": { "maxHealth": 28, "attack": 7, "armor": 3 },
+          "abilities": ["soul_drain", "summon_skeletal_giant_ant"]
+        }
+      ]
+    }
+  ]
+}

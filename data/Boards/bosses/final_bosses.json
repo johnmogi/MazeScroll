@@ -1,0 +1,99 @@
+{
+  "finalBosses": [
+    {
+      "id": "boss_sand_tyrant",
+      "name": "Sand Tyrant",
+      "floor": 1,
+      "biome": "desert",
+      "sigilRewardId": "sigil_eye_of_the_dunes",
+      "description": "A colossal djinn-bonded warlord who commands sandstorms and minions.",
+      "mechanics": {
+        "minionFactory": {
+          "spawnPool": ["monster_sand_wisp", "monster_mire_crawler"],
+          "cooldown": 3,
+          "maxConcurrent": 2
+        },
+        "transformations": [
+          {
+            "trigger": "healthBelowPercent",
+            "value": 0.35,
+            "into": "boss_sand_tyrant_bow",
+            "carryOverStats": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "boss_stone_chorus",
+      "name": "Stone Chorus",
+      "floor": 2,
+      "biome": "echo_vault",
+      "sigilRewardId": "sigil_resonant_core",
+      "description": "A triad of singing obelisks whose harmonics shatter armor and minds.",
+      "mechanics": {
+        "phases": 3,
+        "minionFactory": {
+          "spawnPool": ["monster_mirror_gnome", "monster_clockwork_rabbit"],
+          "cooldown": 2,
+          "maxConcurrent": 3
+        },
+        "transformations": []
+      }
+    },
+    {
+      "id": "boss_twilight_weaver",
+      "name": "Twilight Weaver",
+      "floor": 3,
+      "biome": "heart_of_the_weaver",
+      "sigilRewardId": "sigil_twilight_crown",
+      "description": "The primordial architect of dreams, shifting between nightmare and starlight.",
+      "mechanics": {
+        "phases": 2,
+        "minionFactory": {
+          "spawnPool": ["monster_silkspider_dream", "monster_plague_wisp_swarm"],
+          "cooldown": 1,
+          "maxConcurrent": 4
+        },
+        "transformations": [
+          {
+            "trigger": "phaseChange",
+            "into": "boss_twilight_weaver_star",
+            "carryOverStats": true
+          }
+        ]
+      }
+    }
+  ],
+  "sigils": [
+    {
+      "id": "sigil_eye_of_the_dunes",
+      "name": "Eye of the Dunes",
+      "rarity": "legendary",
+      "effect": {
+        "gainMaxMana": 1,
+        "drawCardOnBossDefeat": 1
+      },
+      "description": "Allows the bearer to read the wind of battle and replenish arcane reserves."
+    },
+    {
+      "id": "sigil_resonant_core",
+      "name": "Resonant Core",
+      "rarity": "legendary",
+      "effect": {
+        "amplifyAoEDamage": 2,
+        "gainArmorOnEcho": 2
+      },
+      "description": "Pulses with harmonic energy gathered from the Stone Chorus obelisks."
+    },
+    {
+      "id": "sigil_twilight_crown",
+      "name": "Twilight Crown",
+      "rarity": "mythic",
+      "effect": {
+        "regainMana": 2,
+        "doubleOnSleepTrigger": true
+      },
+      "description": "Grants dominion over the boundary between dreams and waking."
+    }
+  ]
+}

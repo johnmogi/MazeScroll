@@ -1,0 +1,82 @@
+{
+  "family": "oddities",
+  "description": "Whimsical, uncanny, or confectionery creatures that defy conventional taxonomy.",
+  "variants": [
+    {
+      "id": "monster_candy_burglar",
+      "name": "Candy Burglar",
+      "tags": ["trickster", "stealth"],
+      "forms": [
+        {
+          "id": "monster_candy_burglar",
+          "type": "oddity",
+          "stats": { "maxHealth": 18, "attack": 5, "armor": 1 },
+          "abilities": ["steal_sweets", "sugar_smoke"]
+        },
+        {
+          "id": "monster_candy_burglar_golem",
+          "type": "construct",
+          "stats": { "maxHealth": 22, "attack": 6, "armor": 3 },
+          "abilities": ["candy_crush", "gumdrop_barrage"]
+        }
+      ]
+    },
+    {
+      "id": "monster_clockwork_rabbit",
+      "name": "Clockwork Rabbit",
+      "tags": ["mechanical", "speed"],
+      "forms": [
+        {
+          "id": "monster_clockwork_rabbit",
+          "type": "construct",
+          "stats": { "maxHealth": 16, "attack": 5, "armor": 2 },
+          "abilities": ["wind_up_dash", "gear_whir"]
+        },
+        {
+          "id": "monster_clockwork_rabbit_hologram",
+          "type": "illusion",
+          "stats": { "maxHealth": 14, "attack": 4, "armor": 0 },
+          "abilities": ["mirror_dash", "scatter_bits"]
+        }
+      ]
+    },
+    {
+      "id": "monster_mirror_gnome",
+      "name": "Mirror Gnome",
+      "tags": ["reflect", "trickster"],
+      "forms": [
+        {
+          "id": "monster_mirror_gnome",
+          "type": "oddity",
+          "stats": { "maxHealth": 20, "attack": 4, "armor": 2 },
+          "abilities": ["reflect_spell", "swap_place"]
+        },
+        {
+          "id": "monster_mirror_gnome_glass",
+          "type": "crystal",
+          "stats": { "maxHealth": 18, "attack": 5, "armor": 3 },
+          "abilities": ["prism_flash", "mirror_duplication"]
+        }
+      ]
+    },
+    {
+      "id": "monster_inkling",
+      "name": "Inkling",
+      "tags": ["amorphous", "debuff"],
+      "forms": [
+        {
+          "id": "monster_inkling",
+          "type": "ooze",
+          "stats": { "maxHealth": 22, "attack": 4, "armor": 1 },
+          "abilities": ["ink_splatter", "siphon_color"]
+        },
+        {
+          "id": "monster_inkling_carnation",
+          "type": "dream",
+          "stats": { "maxHealth": 20, "attack": 5, "armor": 1 },
+          "abilities": ["nightmare_blot", "rewrite_form"]
+        }
+      ]
+    }
+  ]
+}

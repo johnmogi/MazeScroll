@@ -1,0 +1,82 @@
+{
+  "family": "fae",
+  "description": "Trickster spirits, sylvan guardians, and whimsical terrors of the Everhaze groves.",
+  "variants": [
+    {
+      "id": "monster_bramble_dryad",
+      "name": "Bramble Dryad",
+      "tags": ["support", "nature"],
+      "forms": [
+        {
+          "id": "monster_bramble_dryad",
+          "type": "fae",
+          "stats": { "maxHealth": 20, "attack": 5, "armor": 2 },
+          "abilities": ["thorn_whip", "regrowth"]
+        },
+        {
+          "id": "monster_bramble_dryad_corrupted",
+          "type": "shadow_fae",
+          "stats": { "maxHealth": 18, "attack": 6, "armor": 1 },
+          "abilities": ["shadow_bloom", "sap_energy"]
+        }
+      ]
+    },
+    {
+      "id": "monster_trickster_pixie",
+      "name": "Trickster Pixie",
+      "tags": ["control", "illusion"],
+      "forms": [
+        {
+          "id": "monster_trickster_pixie",
+          "type": "fae",
+          "stats": { "maxHealth": 14, "attack": 4, "armor": 0 },
+          "abilities": ["glimmer_dust", "phase_flash"]
+        },
+        {
+          "id": "monster_trickster_pixie_candy",
+          "type": "oddity",
+          "stats": { "maxHealth": 15, "attack": 4, "armor": 1 },
+          "abilities": ["steal_sweets", "sugar_rush"]
+        }
+      ]
+    },
+    {
+      "id": "monster_forest_courtier",
+      "name": "Forest Courtier",
+      "tags": ["elite", "magic"],
+      "forms": [
+        {
+          "id": "monster_forest_courtier",
+          "type": "fae",
+          "stats": { "maxHealth": 26, "attack": 6, "armor": 3 },
+          "abilities": ["courtly_duel", "charm"]
+        },
+        {
+          "id": "monster_forest_courtier_royal",
+          "type": "fae_royal",
+          "stats": { "maxHealth": 30, "attack": 7, "armor": 4 },
+          "abilities": ["sovereign_edict", "summon_pixie_guard"]
+        }
+      ]
+    },
+    {
+      "id": "monster_willow_wisp",
+      "name": "Willow Wisp",
+      "tags": ["ranged", "spirit"],
+      "forms": [
+        {
+          "id": "monster_willow_wisp",
+          "type": "fae",
+          "stats": { "maxHealth": 16, "attack": 5, "armor": 0 },
+          "abilities": ["lure", "sparkle_bolt"]
+        },
+        {
+          "id": "monster_willow_wisp_candle",
+          "type": "candy_fae",
+          "stats": { "maxHealth": 17, "attack": 5, "armor": 1 },
+          "abilities": ["candle_trail", "sugar_glaze"]
+        }
+      ]
+    }
+  ]
+}

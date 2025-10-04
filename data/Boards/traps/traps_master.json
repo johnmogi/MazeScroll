@@ -1,0 +1,80 @@
+{
+  "trapCategories": [
+    {
+      "id": "trap_sand_geyser",
+      "name": "Sand Geyser",
+      "environment": "desert",
+      "effect": {
+        "dealDamage": 8,
+        "applyStatus": { "blind": 1 }
+      },
+      "linkedFamilies": ["animals", "insects"],
+      "counterplay": {
+        "skillCheck": "agility",
+        "items": ["item_stonehide_pelt"],
+        "disarmDifficulty": 2
+      }
+    },
+    {
+      "id": "trap_bone_spike_pit",
+      "name": "Bone Spike Pit",
+      "environment": "crypt",
+      "effect": {
+        "dealDamage": 10,
+        "applyStatus": { "bleed": 2 }
+      },
+      "linkedFamilies": ["undead"],
+      "counterplay": {
+        "skillCheck": "perception",
+        "items": ["item_grave_dust_vial"],
+        "disarmDifficulty": 3
+      }
+    },
+    {
+      "id": "trap_fae_glamour",
+      "name": "Fae Glamour",
+      "environment": "grove",
+      "effect": {
+        "applyStatus": { "charm": 1 },
+        "teleport": "randomAdjacent"
+      },
+      "linkedFamilies": ["fae", "oddities"],
+      "counterplay": {
+        "skillCheck": "willpower",
+        "items": ["item_fae_glass_shard"],
+        "disarmDifficulty": 4
+      }
+    },
+    {
+      "id": "trap_chitin_snare",
+      "name": "Chitin Snare",
+      "environment": "hive",
+      "effect": {
+        "applyStatus": { "entangle": 2 },
+        "dealDamage": 4
+      },
+      "linkedFamilies": ["insects"],
+      "counterplay": {
+        "skillCheck": "strength",
+        "items": ["item_chitin_fragment"],
+        "disarmDifficulty": 1
+      }
+    },
+    {
+      "id": "trap_candy_burst",
+      "name": "Candy Burst",
+      "environment": "confection",
+      "effect": {
+        "dealDamage": 6,
+        "applyStatus": { "sticky": 2 },
+        "summon": "minion_candy_gremlin"
+      },
+      "linkedFamilies": ["oddities"],
+      "counterplay": {
+        "skillCheck": "dexterity",
+        "items": ["item_sugar_crystal"],
+        "disarmDifficulty": 2
+      }
+    }
+  ]
+}

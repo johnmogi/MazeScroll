@@ -1,0 +1,54 @@
+{
+  "consumables": [
+    {
+      "id": "potion_of_renewal",
+      "name": "Potion of Renewal",
+      "rarity": "common",
+      "effect": {
+        "restoreHealth": 12,
+        "restoreMana": 3
+      },
+      "slots": ["consumable"],
+      "defaultHeroes": ["hero_sword_fighter", "hero_axe_wielder_dwarf"],
+      "description": "A revitalizing draught that mends wounds and rekindles mana reserves."
+    },
+    {
+      "id": "phial_of_lucidity",
+      "name": "Phial of Lucidity",
+      "rarity": "rare",
+      "effect": {
+        "restoreMana": 6,
+        "drawCard": 1
+      },
+      "slots": ["consumable"],
+      "defaultHeroes": ["hero_dreamcaster"],
+      "description": "Distilled dreamlight that sharpens focus during intense battles."
+    }
+  ],
+  "gear": [
+    {
+      "id": "stonebrew_tonic",
+      "name": "Stonebrew Tonic",
+      "rarity": "common",
+      "effect": {
+        "gainArmor": 4,
+        "restoreHealth": 6
+      },
+      "slots": ["consumable"],
+      "defaultHeroes": ["hero_axe_wielder_dwarf"],
+      "description": "Dwarven brew fortified with minerals to bolster defenses."
+    },
+    {
+      "id": "quiver_of_glimmershots",
+      "name": "Quiver of Glimmershots",
+      "rarity": "epic",
+      "effect": {
+        "increaseRangedDamage": 2,
+        "restoreManaOnMark": 1
+      },
+      "slots": ["gear"],
+      "defaultHeroes": ["hero_elf_archer"],
+      "description": "A crystalline quiver that converts marked targets into renewed energy."
+    }
+  ]
+}

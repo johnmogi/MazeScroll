@@ -1,0 +1,63 @@
+{
+  "family": "animals",
+  "description": "Natural creatures adapted to the shifting labyrinths of the Weaver.",
+  "variants": [
+    {
+      "id": "monster_giant_ant",
+      "name": "Giant Ant",
+      "tags": ["insect", "burrower"],
+      "forms": [
+        {
+          "id": "monster_giant_ant",
+          "type": "living",
+          "stats": { "maxHealth": 18, "attack": 4, "armor": 1 },
+          "abilities": ["acid_spray", "mandible_clamp"]
+        },
+        {
+          "id": "monster_giant_ant_skeletal",
+          "type": "undead",
+          "stats": { "maxHealth": 14, "attack": 5, "armor": 2 },
+          "abilities": ["bone_shard", "necrotic_bite"]
+        }
+      ]
+    },
+    {
+      "id": "monster_dire_wolf",
+      "name": "Dire Wolf",
+      "tags": ["beast", "pack"],
+      "forms": [
+        {
+          "id": "monster_dire_wolf",
+          "type": "living",
+          "stats": { "maxHealth": 22, "attack": 6, "armor": 2 },
+          "abilities": ["howl", "rending_claws"]
+        },
+        {
+          "id": "monster_dire_wolf_spectral",
+          "type": "spirit",
+          "stats": { "maxHealth": 16, "attack": 7, "armor": 1 },
+          "abilities": ["phase_pounce", "wail"]
+        }
+      ]
+    },
+    {
+      "id": "monster_giant_boar",
+      "name": "Giant Boar",
+      "tags": ["beast", "charger"],
+      "forms": [
+        {
+          "id": "monster_giant_boar",
+          "type": "living",
+          "stats": { "maxHealth": 28, "attack": 7, "armor": 3 },
+          "abilities": ["gore", "stomp"]
+        },
+        {
+          "id": "monster_giant_boar_clockwork",
+          "type": "construct",
+          "stats": { "maxHealth": 30, "attack": 8, "armor": 4 },
+          "abilities": ["gear_grind", "steam_rush"]
+        }
+      ]
+    }
+  ]
+}

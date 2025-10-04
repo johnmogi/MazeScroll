@@ -1,0 +1,79 @@
+{
+  "family": "oddities",
+  "attacks": [
+    {
+      "id": "attack_candy_crush",
+      "name": "Candy Crush",
+      "usedBy": ["monster_candy_burglar", "monster_candy_burglar_golem"],
+      "effect": {
+        "dealDamage": 9,
+        "applyStatus": { "sticky": 1 }
+      }
+    },
+    {
+      "id": "attack_ink_splatter",
+      "name": "Ink Splatter",
+      "usedBy": ["monster_inkling", "monster_inkling_carnation"],
+      "effect": {
+        "dealDamage": 7,
+        "applyStatus": { "blind": 1 }
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell_gumdrop_barrage",
+      "name": "Gumdrop Barrage",
+      "usedBy": ["monster_candy_burglar_golem"],
+      "effect": {
+        "dealDamage": 5,
+        "repeat": 3
+      }
+    },
+    {
+      "id": "spell_mirror_duplication",
+      "name": "Mirror Duplication",
+      "usedBy": ["monster_mirror_gnome", "monster_mirror_gnome_glass"],
+      "effect": {
+        "summon": "minion_mirror_shard",
+        "reflectDamage": 3
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "item_sugar_crystal",
+      "name": "Sugar Crystal",
+      "dropsFrom": ["monster_candy_burglar", "monster_willow_wisp_candle"],
+      "effect": {
+        "restoreMana": 2,
+        "craftingIngredient": true
+      }
+    },
+    {
+      "id": "item_ink_vial",
+      "name": "Ink Vial",
+      "dropsFrom": ["monster_inkling"],
+      "effect": {
+        "applyStatus": { "blind": 1 },
+        "upgradeBoost": { "story": 1 }
+      }
+    }
+  ],
+  "minions": [
+    {
+      "id": "minion_mirror_shard",
+      "name": "Mirror Shard",
+      "summonedBy": "monster_mirror_gnome",
+      "stats": { "maxHealth": 5, "attack": 3, "armor": 1 },
+      "abilities": ["reflect", "shatter"]
+    },
+    {
+      "id": "minion_candy_gremlin",
+      "name": "Candy Gremlin",
+      "summonedBy": "monster_candy_burglar",
+      "stats": { "maxHealth": 7, "attack": 3, "armor": 0 },
+      "abilities": ["steal_sweets", "sugar_rush"]
+    }
+  ]
+}

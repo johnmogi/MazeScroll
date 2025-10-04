@@ -1,0 +1,88 @@
+{
+  "family": "insects",
+  "description": "Swarming chitinous foes ranging from mundane pests to arcane hive lords.",
+  "variants": [
+    {
+      "id": "monster_swarm_termite",
+      "name": "Arcane Termite Swarm",
+      "tags": ["swarm", "acid"],
+      "forms": [
+        {
+          "id": "monster_swarm_termite",
+          "type": "living",
+          "stats": { "maxHealth": 20, "attack": 5, "armor": 1 },
+          "abilities": ["acidic_gnaw", "swarm_split"]
+        },
+        {
+          "id": "monster_swarm_termite_fiery",
+          "type": "elemental",
+          "stats": { "maxHealth": 18, "attack": 6, "armor": 1 },
+          "abilities": ["ember_spread", "flare_burst"]
+        },
+        {
+          "id": "monster_swarm_termite_skeletal",
+          "type": "undead",
+          "stats": { "maxHealth": 16, "attack": 6, "armor": 2 },
+          "abilities": ["bone_dust_cloud", "necrotic_gnaw"]
+        }
+      ]
+    },
+    {
+      "id": "monster_giant_beetle",
+      "name": "Giant Chrysalis Beetle",
+      "tags": ["tank", "hard_shell"],
+      "forms": [
+        {
+          "id": "monster_giant_beetle",
+          "type": "living",
+          "stats": { "maxHealth": 30, "attack": 6, "armor": 6 },
+          "abilities": ["shell_bash", "reflective_carapace"]
+        },
+        {
+          "id": "monster_giant_beetle_crystal",
+          "type": "crystal",
+          "stats": { "maxHealth": 26, "attack": 7, "armor": 7 },
+          "abilities": ["prism_bolt", "mana_leech"]
+        }
+      ]
+    },
+    {
+      "id": "monster_silkspider",
+      "name": "Silkweaver Matriarch",
+      "tags": ["control", "poison"],
+      "forms": [
+        {
+          "id": "monster_silkspider",
+          "type": "living",
+          "stats": { "maxHealth": 24, "attack": 6, "armor": 2 },
+          "abilities": ["web_trap", "venom_spike"]
+        },
+        {
+          "id": "monster_silkspider_dream",
+          "type": "dream",
+          "stats": { "maxHealth": 22, "attack": 5, "armor": 3 },
+          "abilities": ["somnolent_web", "illusion_spawn"]
+        }
+      ]
+    },
+    {
+      "id": "monster_locust_herald",
+      "name": "Herald Locust",
+      "tags": ["support", "buff"],
+      "forms": [
+        {
+          "id": "monster_locust_herald",
+          "type": "living",
+          "stats": { "maxHealth": 18, "attack": 4, "armor": 1 },
+          "abilities": ["screech_buff", "devour_crops"]
+        },
+        {
+          "id": "monster_locust_herald_skeletal",
+          "type": "undead",
+          "stats": { "maxHealth": 15, "attack": 5, "armor": 2 },
+          "abilities": ["bone_rattle", "harvest_life"]
+        }
+      ]
+    }
+  ]
+}

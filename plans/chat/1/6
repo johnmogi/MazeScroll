@@ -1,0 +1,14 @@
+
+
+
+
+# Findings
+- **Filler stories** now live in [data/Boards/stories/fillers/filler_stories.json](cci:7://file:///c:/Users/anist/Local%20Sites/GAMES/Dungeon%20Weaver/data/Boards/stories/fillers/filler_stories.json:0:0-0:0), with entries like `filler_scroll_whispers`, `filler_temporary_tail`, `filler_margin_sketch`, `filler_candy_smudge`, and `filler_bone_echo`.
+- Each filler defines `triggers` (e.g., `event: "minorDamage"`, `family: "oddities"`), `interpretation`/`effects`, and optional interactive `events`, letting the MazeScroll narratively reinterpret gameplay moments.
+
+# Recommended Actions
+- **Wire into story engine**: Update your narrative loader so rooms or combat events can pull filler IDs based on triggers (`minorDamage`, `postCombat`, `family` tags).
+- **Expand pools**: Add more fillers per biome/family/run state for variance; follow the same schema and append to [filler_stories.json](cci:7://file:///c:/Users/anist/Local%20Sites/GAMES/Dungeon%20Weaver/data/Boards/stories/fillers/filler_stories.json:0:0-0:0).
+- **Integrate with rewards**: Ensure effects like `gainSigilProgress` or `gainItem` hook into existing inventory/sigil systems.
+
+Summary: Ambient filler storytelling is now JSON-defined, enabling the scroll to reinterpret gameplay beats through rich narrative snippets.

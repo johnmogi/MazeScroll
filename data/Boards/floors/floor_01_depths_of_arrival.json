@@ -1,0 +1,30 @@
+{
+  "id": "floor_01_depths_of_arrival",
+  "name": "Depths of Arrival",
+  "layout": {
+    "rows": 3,
+    "cols": 3,
+    "tiles": [
+      ["room_entry", "room_story_awakening", "room_combat_crawler"],
+      ["room_item_cache", "room_decision_split", "room_mini_game_runes"],
+      ["room_combat_brute", "room_story_echo", "room_boss_antechamber"]
+    ]
+  },
+  "entry": "room_entry",
+  "exit": "room_boss_antechamber",
+  "boss": {
+    "roomId": "room_boss_antechamber",
+    "monsterId": "boss_sand_tyrant",
+    "sigilRewardId": "sigil_eye_of_the_dunes"
+  },
+  "rarityBias": {
+    "common": 0.5,
+    "rare": 0.3,
+    "epic": 0.15,
+    "legendary": 0.05
+  },
+  "notes": [
+    "Single-entry, single-exit floor for MVP run with compact 3x3 grid.",
+    "Tiles reference room definitions in data/rooms/rooms_floor_01.json."
+  ]
+}

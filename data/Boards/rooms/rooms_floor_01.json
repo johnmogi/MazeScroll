@@ -1,0 +1,106 @@
+[
+  {
+    "id": "room_entry",
+    "type": "entry",
+    "description": "A shattered gateway pulsing with residual dreamlight.",
+    "connections": ["room_story_awakening", "room_item_cache"],
+    "encounter": null
+  },
+  {
+    "id": "room_story_awakening",
+    "type": "story",
+    "description": "Visions of the Weave whisper choices to the hero.",
+    "connections": ["room_entry", "room_decision_split", "room_combat_crawler"],
+    "encounter": {
+      "storyId": "story_tile_forgotten_oracle"
+    }
+  },
+  {
+    "id": "room_combat_crawler",
+    "type": "combat",
+    "description": "Sand-strewn chamber haunted by Mire Crawlers.",
+    "connections": ["room_story_awakening", "room_mini_game_runes"],
+    "encounter": {
+      "monsterTable": ["monster_mire_crawler", "monster_sand_wisp"],
+      "reward": {
+        "cards": ["card_axe_dwarf_01"],
+        "sigils": []
+      }
+    }
+  },
+  {
+    "id": "room_item_cache",
+    "type": "item",
+    "description": "A cache of relic shards and potions.",
+    "connections": ["room_entry", "room_combat_brute", "room_decision_split"],
+    "encounter": {
+      "items": ["potion_of_renewal"],
+      "sigils": ["sigil_blade_song"],
+      "cards": []
+    }
+  },
+  {
+    "id": "room_decision_split",
+    "type": "decision",
+    "description": "Choose between aiding spirits or harnessing their power.",
+    "connections": ["room_story_awakening", "room_item_cache", "room_mini_game_runes", "room_story_echo"],
+    "encounter": {
+      "decisionId": "decision_tile_kelari_dilemma",
+      "options": [
+        {
+          "id": "aid_spirits",
+          "effect": { "gainSigil": "sigil_eye_of_the_dunes" }
+        },
+        {
+          "id": "harness_power",
+          "effect": { "gainCard": "card_sword_fighter_07" }
+        }
+      ]
+    }
+  },
+  {
+    "id": "room_mini_game_runes",
+    "type": "mini_game",
+    "description": "Rune lattice puzzle offering upgrade tokens.",
+    "connections": ["room_decision_split", "room_combat_crawler", "room_boss_antechamber"],
+    "encounter": {
+      "miniGameId": "mini_game_rune_weave",
+      "reward": {
+        "upgradeTokens": 1
+      }
+    }
+  },
+  {
+    "id": "room_combat_brute",
+    "type": "combat",
+    "description": "Arena scoured by sand brute patrols.",
+    "connections": ["room_item_cache", "room_story_echo"],
+    "encounter": {
+      "monsterTable": ["monster_sand_brute"],
+      "reward": {
+        "cards": ["card_sword_fighter_05"],
+        "sigils": []
+      }
+    }
+  },
+  {
+    "id": "room_story_echo",
+    "type": "story",
+    "description": "Resonant chamber chronicling the Weaver's rise.",
+    "connections": ["room_decision_split", "room_combat_brute", "room_boss_antechamber"],
+    "encounter": {
+      "storyId": "story_tile_echo_vault"
+    }
+  },
+  {
+    "id": "room_boss_antechamber",
+    "type": "boss",
+    "description": "Final sanctum guarded by the Sand Tyrant.",
+    "connections": ["room_mini_game_runes", "room_story_echo"],
+    "encounter": {
+      "bossId": "boss_sand_tyrant",
+      "sigilRewardId": "sigil_eye_of_the_dunes",
+      "cardRewards": ["card_dreamcaster_07_plus"]
+    }
+  }
+]

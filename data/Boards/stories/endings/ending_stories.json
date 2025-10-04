@@ -1,0 +1,26 @@
+{
+  "endings": [
+    {
+      "id": "ending_sigil_ascension",
+      "title": "Sigil Ascension",
+      "text": [
+        "The final boss collapses into shimmering sigil shards.",
+        "Your hero weaves the fragments into newfound power, ready for the next descent."],
+      "tags": ["victory", "sigil"],
+      "rewards": {
+        "sigilRewardId": "sigil_eye_of_the_dunes"
+      }
+    },
+    {
+      "id": "ending_echo_resonance",
+      "title": "Echo Resonance",
+      "text": [
+        "The MazeScroll reverberates as the Stone Chorus falls silent.",
+        "Resonant energy floods your sigils, amplifying their future echoes."],
+      "tags": ["victory", "resonance"],
+      "rewards": {
+        "sigilRewardId": "sigil_resonant_core"
+      }
+    }
+  ]
+}

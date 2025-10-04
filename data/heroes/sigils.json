@@ -1,0 +1,107 @@
+{
+  "sigils": [
+    {
+      "id": "sigil_blade_song",
+      "name": "Blade Song",
+      "rarity": "rare",
+      "trigger": "onComboChain",
+      "effect": {
+        "gainArmor": 2,
+        "dealBonusDamage": 2
+      },
+      "applicableHeroes": ["hero_sword_fighter"],
+      "source": "starting",
+      "description": "Synchronized strikes reinforce armor and amplify blade tempo."
+    },
+    {
+      "id": "sigil_warding_tempest",
+      "name": "Warding Tempest",
+      "rarity": "epic",
+      "trigger": "onFullRecover",
+      "effect": {
+        "gainArmor": 3
+      },
+      "applicableHeroes": ["hero_sword_fighter"],
+      "source": "progression",
+      "description": "A cyclonic shield forms whenever health is fully restored."
+    },
+    {
+      "id": "sigil_oneiric_pulse",
+      "name": "Oneiric Pulse",
+      "rarity": "epic",
+      "trigger": "onSpellCast",
+      "effect": {
+        "regainMana": 1,
+        "drawCard": 1
+      },
+      "applicableHeroes": ["hero_dreamcaster"],
+      "source": "starting",
+      "description": "Dream energy cascades into renewed focus after each spell."
+    },
+    {
+      "id": "sigil_twilight_resonance",
+      "name": "Twilight Resonance",
+      "rarity": "legendary",
+      "trigger": "onSleepEffect",
+      "effect": {
+        "amplifySpellDamage": 2,
+        "regainMana": 1
+      },
+      "applicableHeroes": ["hero_dreamcaster"],
+      "source": "progression",
+      "description": "Harnesses the twilight between dreams to empower follow-up spells."
+    },
+    {
+      "id": "sigil_ironbound_fury",
+      "name": "Ironbound Fury",
+      "rarity": "rare",
+      "trigger": "onTakeDamage",
+      "effect": {
+        "dealCounterDamage": 2,
+        "gainArmor": 1
+      },
+      "applicableHeroes": ["hero_axe_wielder_dwarf"],
+      "source": "starting",
+      "description": "Battle rage hardens armor and lashes out at foes."
+    },
+    {
+      "id": "sigil_molten_core",
+      "name": "Molten Core",
+      "rarity": "legendary",
+      "trigger": "onArmorBreak",
+      "effect": {
+        "dealDamage": 6,
+        "applyStatus": { "burn": 2 }
+      },
+      "applicableHeroes": ["hero_axe_wielder_dwarf"],
+      "source": "progression",
+      "description": "Molten fury erupts when armor is shattered."
+    },
+    {
+      "id": "sigil_emberleaf_focus",
+      "name": "Emberleaf Focus",
+      "rarity": "epic",
+      "trigger": "onRangedAttack",
+      "effect": {
+        "dealBonusDamage": 2,
+        "gainMana": 1
+      },
+      "applicableHeroes": ["hero_elf_archer"],
+      "source": "starting",
+      "description": "Fletched embers ignite with each precise shot."
+    },
+    {
+      "id": "sigil_starlit_trail",
+      "name": "Starlit Trail",
+      "rarity": "legendary",
+      "trigger": "onMarkedTarget",
+      "effect": {
+        "gainArmor": 2,
+        "drawCard": 1
+      },
+      "applicableHeroes": ["hero_elf_archer"],
+      "source": "progression",
+      "description": "Starbound guidance rewards hunters who mark their quarry."
+    }
+  ]
+}

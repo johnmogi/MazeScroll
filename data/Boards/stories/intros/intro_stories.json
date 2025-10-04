@@ -1,0 +1,24 @@
+{
+  "intros": [
+    {
+      "id": "intro_whispering_gateway",
+      "title": "Whispering Gateway",
+      "text": [
+        "The MazeScroll opens on a whisper, the air thick with dreamlight.",
+        "Your hero steps through a fractured arch, echoes of past runs chasing their heels."],
+      "tags": ["mystery", "hero_arrival"],
+      "rewards": {
+        "startingSigil": "sigil_blade_song"
+      }
+    },
+    {
+      "id": "intro_ember_path",
+      "title": "Ember Path",
+      "text": [
+        "Flames gutter along the corridor, illuminating ancient murals.",
+        "Each mural depicts a hero lost to time, waiting for their legacy to rekindle."],
+      "tags": ["fire", "legacy"],
+      "rewards": {}
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "fillers": [
+    {
+      "id": "filler_scroll_whispers",
+      "title": "Scroll Whispers",
+      "text": [
+        "The MazeScroll rustles, its ink rearranging to warn of unseen claws.",
+        "A margin note forms: 'Minor scrape interpreted as heroic flourish.'"
+      ],
+      "tags": ["ambient", "scroll"],
+      "triggers": {
+        "event": "minorDamage",
+        "severity": "low"
+      },
+      "interpretation": {
+        "gameEvent": "takeDamage",
+        "scrollNarrative": "The hero gains a cosmetic tail of inked smoke."
+      }
+    },
+    {
+      "id": "filler_temporary_tail",
+      "title": "Temporary Tail",
+      "text": [
+        "A playful glyph sprouts from the hero's shadow, swishing like a cat's tail.",
+        "It fades with the next decisive strike, leaving only amused annotations."
+      ],
+      "tags": ["humor", "injury_mask"],
+      "triggers": {
+        "event": "damageOverTime",
+        "status": "burn"
+      },
+      "interpretation": {
+        "gameEvent": "applyStatus",
+        "scrollNarrative": "Status effects are visualized as quirky appendages."
+      }
+    },
+    {
+      "id": "filler_margin_sketch",
+      "title": "Margin Sketch",
+      "text": [
+        "Illustrations bloom along the parchment: future rooms, half-sketched foes.",
+        "The hero can linger to study them, gaining hints or simply inspiration."
+      ],
+      "tags": ["exploration", "foreshadow"],
+      "triggers": {
+        "event": "idle",
+        "location": "rest"
+      },
+      "effects": {
+        "revealRooms": 1,
+        "gainResource": { "insight": 1 }
+      }
+    },
+    {
+      "id": "filler_candy_smudge",
+      "title": "Candy Smudge",
+      "text": [
+        "A smear of candied ink stains the edge of the scroll, buzzing faintly.",
+        "Touching it summons a tiny candy gremlin doodle that offers a trade."
+      ],
+      "tags": ["oddity", "trade"],
+      "triggers": {
+        "event": "loot",
+        "family": "oddities"
+      },
+      "events": [
+        {
+          "type": "choice",
+          "options": [
+            {
+              "id": "option_accept_trade",
+              "effect": { "gainItem": "item_sugar_crystal", "loseResource": { "health": 3 } }
+            },
+            {
+              "id": "option_decline",
+              "effect": { "gainResource": { "insight": 1 } }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "filler_bone_echo",
+      "title": "Bone Echo",
+      "text": [
+        "The scroll flutters, replaying the clash with skeletal foes as animated etchings.",
+        "Each impact is recorded as a musical note, charting the hero's resilience."
+      ],
+      "tags": ["undead", "record"],
+      "triggers": {
+        "event": "postCombat",
+        "family": "undead"
+      },
+      "effects": {
+        "gainSigilProgress": "sigil_resonant_core"
+      }
+    }
+  ]
+}

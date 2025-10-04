@@ -1,0 +1,54 @@
+{
+  "family": "animals",
+  "attacks": [
+    {
+      "id": "attack_gore_charge",
+      "name": "Gore Charge",
+      "usedBy": ["monster_giant_boar", "monster_giant_boar_clockwork"],
+      "effect": {
+        "dealDamage": 10,
+        "applyStatus": { "stagger": 1 }
+      }
+    },
+    {
+      "id": "attack_rending_claws",
+      "name": "Rending Claws",
+      "usedBy": ["monster_dire_wolf", "monster_dire_wolf_spectral"],
+      "effect": {
+        "dealDamage": 8,
+        "applyStatus": { "bleed": 2 }
+      }
+    }
+  ],
+  "spells": [
+    {
+      "id": "spell_alpha_howl",
+      "name": "Alpha Howl",
+      "usedBy": ["monster_dire_wolf"],
+      "effect": {
+        "buffAllies": { "attack": 2 },
+        "applyStatus": { "fear": 1 }
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "item_stonehide_pelt",
+      "name": "Stonehide Pelt",
+      "dropsFrom": ["monster_giant_boar", "monster_giant_boar_clockwork"],
+      "effect": {
+        "gainArmor": 3,
+        "craftingIngredient": true
+      }
+    }
+  ],
+  "minions": [
+    {
+      "id": "minion_wolf_pup",
+      "name": "Wolf Pup",
+      "summonedBy": "monster_dire_wolf",
+      "stats": { "maxHealth": 8, "attack": 3, "armor": 0 },
+      "abilities": ["nip", "assist_howl"]
+    }
+  ]
+}

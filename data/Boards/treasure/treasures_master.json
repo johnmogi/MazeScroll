@@ -1,0 +1,98 @@
+{
+  "sigils": [
+    {
+      "id": "sigil_eye_of_the_dunes",
+      "name": "Eye of the Dunes",
+      "rarity": "legendary",
+      "effect": {
+        "gainMaxMana": 1,
+        "drawCardOnBossDefeat": 1
+      },
+      "associatedFamilies": ["animals", "insects"],
+      "notes": "Dropped by desert-themed bosses such as boss_sand_tyrant."
+    },
+    {
+      "id": "sigil_blade_song",
+      "name": "Blade Song",
+      "rarity": "rare",
+      "effect": {
+        "gainArmorOnCombo": 2,
+        "bonusDamageOnCombo": 2
+      },
+      "associatedFamilies": ["animals", "undead"],
+      "notes": "Appears in item caches and select treasure rooms."
+    }
+  ],
+  "consumables": [
+    {
+      "id": "potion_of_renewal",
+      "name": "Potion of Renewal",
+      "rarity": "common",
+      "effect": {
+        "restoreHealth": 12,
+        "restoreMana": 3
+      },
+      "associatedFamilies": ["animals", "fae"],
+      "lootSources": ["room_item_cache"]
+    },
+    {
+      "id": "phial_of_lucidity",
+      "name": "Phial of Lucidity",
+      "rarity": "rare",
+      "effect": {
+        "restoreMana": 6,
+        "drawCard": 1
+      },
+      "associatedFamilies": ["insects", "fae"],
+      "lootSources": ["room_story_awakening", "mini_game_rune_weave"]
+    }
+  ],
+  "gear": [
+    {
+      "id": "item_stonehide_pelt",
+      "name": "Stonehide Pelt",
+      "rarity": "rare",
+      "effect": {
+        "gainArmorBuff": 3,
+        "craftingIngredient": true
+      },
+      "associatedFamilies": ["animals"],
+      "lootSources": ["monster_giant_boar", "monster_giant_boar_clockwork"]
+    },
+    {
+      "id": "item_fae_glass_shard",
+      "name": "Fae Glass Shard",
+      "rarity": "epic",
+      "effect": {
+        "increaseMaxMana": 1,
+        "amplifySpellDamage": 2
+      },
+      "associatedFamilies": ["fae", "oddities"],
+      "lootSources": ["monster_trickster_pixie", "monster_willow_wisp"]
+    }
+  ],
+  "curios": [
+    {
+      "id": "item_chitin_fragment",
+      "name": "Chitin Fragment",
+      "rarity": "common",
+      "effect": {
+        "upgradeBoost": { "armor": 1 },
+        "craftingIngredient": true
+      },
+      "associatedFamilies": ["insects", "undead"],
+      "lootSources": ["monster_giant_beetle", "monster_giant_beetle_crystal"]
+    },
+    {
+      "id": "item_sugar_crystal",
+      "name": "Sugar Crystal",
+      "rarity": "rare",
+      "effect": {
+        "restoreMana": 2,
+        "unlockCandyEncounters": true
+      },
+      "associatedFamilies": ["oddities", "fae"],
+      "lootSources": ["monster_candy_burglar", "monster_willow_wisp_candle"]
+    }
+  ]
+}

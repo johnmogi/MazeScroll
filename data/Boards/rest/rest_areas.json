@@ -1,0 +1,107 @@
+{
+  "restAreas": [
+    {
+      "id": "rest_basic_camp",
+      "name": "Hidden Camp",
+      "description": "A quiet alcove where the hero can recover and refocus.",
+      "options": [
+        {
+          "id": "option_restore_health",
+          "type": "restore",
+          "effect": {
+            "restoreHealthPercent": 0.5
+          }
+        },
+        {
+          "id": "option_restore_mana",
+          "type": "restore",
+          "effect": {
+            "restoreManaPercent": 0.5
+          }
+        },
+        {
+          "id": "option_balance_recovery",
+          "type": "restore",
+          "effect": {
+            "restoreHealthPercent": 0.25,
+            "restoreManaPercent": 0.25
+          }
+        },
+        {
+          "id": "option_upgrade_card",
+          "type": "upgrade",
+          "effect": {
+            "upgradeCard": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "rest_enchanted_shrine",
+      "name": "Enchanted Shrine",
+      "description": "Dreamlight flows through the shrine, offering arcane boons.",
+      "options": [
+        {
+          "id": "option_spell_reforge",
+          "type": "craft",
+          "effect": {
+            "createSpell": true,
+            "spellFamily": "dream"
+          }
+        },
+        {
+          "id": "option_create_sigil",
+          "type": "craft",
+          "effect": {
+            "createSigil": true,
+            "sigilPool": ["sigil_blade_song", "sigil_oneiric_pulse", "sigil_emberleaf_focus"]
+          }
+        },
+        {
+          "id": "option_dice_roll",
+          "type": "roll",
+          "effect": {
+            "diceType": "d6",
+            "outcomes": {
+              "1-2": { "restoreManaPercent": 0.3 },
+              "3-4": { "restoreHealthPercent": 0.3 },
+              "5": { "upgradeCard": true },
+              "6": { "createSigil": true, "sigilPool": ["sigil_twilight_resonance"] }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "rest_forgesanctum",
+      "name": "Forge Sanctum",
+      "description": "Runic anvils allow heroes to temper their equipment and cards.",
+      "options": [
+        {
+          "id": "option_reinforce_armor",
+          "type": "craft",
+          "effect": {
+            "gainArmorBuff": 3,
+            "temporary": true
+          }
+        },
+        {
+          "id": "option_socket_sigil",
+          "type": "craft",
+          "effect": {
+            "upgradeSigil": true,
+            "requirements": ["sigil_ironbound_fury", "sigil_molten_core"]
+          }
+        },
+        {
+          "id": "option_card_forge",
+          "type": "upgrade",
+          "effect": {
+            "evolveCard": true
+          }
+        }
+      ]
+    }
+  ]
+}
+}
