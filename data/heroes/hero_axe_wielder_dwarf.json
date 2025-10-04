@@ -1,0 +1,70 @@
+{
+  "id": "hero_axe_wielder_dwarf",
+  "name": "Grimnar Stonecleave",
+  "class": "Axe Wielder Dwarf",
+  "stats": {
+    "maxHealth": 48,
+    "health": 48,
+    "maxMana": 4,
+    "mana": 4,
+    "attack": 8,
+    "armor": 6
+  },
+  "sigils": [
+    {
+      "id": "sigil_ironbound_fury",
+      "name": "Ironbound Fury",
+      "trigger": "onTakeDamage",
+      "effect": {
+        "dealCounterDamage": 2,
+        "gainArmor": 1
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "stonebrew_tonic",
+      "slot": "consumable",
+      "quantity": 2
+    }
+  ],
+  "deck": {
+    "primarySet": "axe_wielder_dwarf",
+    "cardSets": [
+      "dreamcaster",
+      "sword_fighter",
+      "axe_wielder_dwarf",
+      "elf_archer"
+    ]
+  },
+  "abilities": [
+    {
+      "id": "ability_quake_cleave",
+      "cooldown": 3,
+      "effect": {
+        "dealDamage": 9,
+        "shatterArmor": 2
+      }
+    }
+  ],
+  "progression": {
+    "startingLevel": 1,
+    "maxLevel": 10,
+    "levelRewards": {
+      "4": {
+        "unlockCard": "card_axe_dwarf_06"
+      },
+      "8": {
+        "unlockSigil": "sigil_molten_core"
+      }
+    }
+  },
+  "storyHooks": [
+    "Last scion of the Stonecleave clan defending the Echoing Vault.",
+    "Seeks the molten heart rumored beneath the Weaver's nexus."
+  ],
+  "metadata": {
+    "portrait": "art/heroes/axe_wielder_dwarf.png",
+    "rarity": "rare"
+  }
+}

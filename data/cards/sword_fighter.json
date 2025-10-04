@@ -1,0 +1,227 @@
+[
+  {
+    "id": "card_sword_fighter_01",
+    "name": "Tempest Slash",
+    "archetype": "sword_fighter",
+    "tier": 1,
+    "type": "attack",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 8 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_01_plus",
+        "effect": { "dealDamage": 11, "gainArmor": 2 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_02",
+    "name": "Guarding Riposte",
+    "archetype": "sword_fighter",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 1 },
+    "effect": { "gainArmor": 6, "dealCounterDamage": 3 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_02_plus",
+        "effect": { "gainArmor": 8, "dealCounterDamage": 4 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_03",
+    "name": "Blade Feint",
+    "archetype": "sword_fighter",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 0 },
+    "effect": { "drawCard": 1, "gainArmor": 2 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_03_plus",
+        "effect": { "drawCard": 1, "gainArmor": 3, "dealDamage": 3 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_04",
+    "name": "Whirlwind Parry",
+    "archetype": "sword_fighter",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "gainArmor": 9, "cleanse": 1 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_04_plus",
+        "effect": { "gainArmor": 11, "cleanse": 1, "dealDamage": 4 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_05",
+    "name": "Storm Lunge",
+    "archetype": "sword_fighter",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 10, "move": 1 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_05_plus",
+        "effect": { "dealDamage": 13, "move": 1, "applyStatus": { "vulnerable": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_06",
+    "name": "Echo Guard",
+    "archetype": "sword_fighter",
+    "tier": 2,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "gainArmor": 12, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_06_plus",
+        "effect": { "gainArmor": 15, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_07",
+    "name": "Lightning Draw",
+    "archetype": "sword_fighter",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 1 },
+    "effect": { "dealDamage": 9, "drawCard": 1 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_07_plus",
+        "effect": { "dealDamage": 11, "drawCard": 1, "gainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_08",
+    "name": "Gale Step",
+    "archetype": "sword_fighter",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 1 },
+    "effect": { "move": 2, "gainArmor": 3 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_08_plus",
+        "effect": { "move": 2, "gainArmor": 4, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_09",
+    "name": "Stormbreak Cleave",
+    "archetype": "sword_fighter",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 14, "splashDamage": 6 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_09_plus",
+        "effect": { "dealDamage": 17, "splashDamage": 7 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_10",
+    "name": "Aegis Rally",
+    "archetype": "sword_fighter",
+    "tier": 2,
+    "type": "skill",
+    "cost": { "mana": 3 },
+    "effect": { "gainArmor": 14, "heal": 5 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_10_plus",
+        "effect": { "gainArmor": 16, "heal": 6, "drawCard": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_11",
+    "name": "Cyclone Combo",
+    "archetype": "sword_fighter",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 7, "repeat": 2 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_11_plus",
+        "effect": { "dealDamage": 8, "repeat": 3 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_12",
+    "name": "Tempest Ward",
+    "archetype": "sword_fighter",
+    "tier": 3,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "gainArmor": 12, "reflectDamage": 6 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_12_plus",
+        "effect": { "gainArmor": 14, "reflectDamage": 8 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_13",
+    "name": "Blade Storm",
+    "archetype": "sword_fighter",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 4 },
+    "effect": { "dealDamage": 18, "applyStatus": { "bleed": 2 } },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_13_plus",
+        "effect": { "dealDamage": 22, "applyStatus": { "bleed": 3 } }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_14",
+    "name": "Guardian's Oath",
+    "archetype": "sword_fighter",
+    "tier": 3,
+    "type": "skill",
+    "cost": { "mana": 3 },
+    "effect": { "gainArmor": 18, "heal": 4, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_14_plus",
+        "effect": { "gainArmor": 20, "heal": 6, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_sword_fighter_15",
+    "name": "Stormblade Finale",
+    "archetype": "sword_fighter",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 5 },
+    "effect": { "dealDamage": 26, "gainArmor": 6 },
+    "upgrades": [
+      {
+        "id": "card_sword_fighter_15_plus",
+        "effect": { "dealDamage": 30, "gainArmor": 8 }
+      }
+    ]
+  }
+]

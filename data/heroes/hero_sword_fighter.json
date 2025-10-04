@@ -1,0 +1,70 @@
+{
+  "id": "hero_sword_fighter",
+  "name": "Stormblade Vanguard",
+  "class": "Sword Fighter",
+  "stats": {
+    "maxHealth": 40,
+    "health": 40,
+    "maxMana": 6,
+    "mana": 6,
+    "attack": 7,
+    "armor": 4
+  },
+  "sigils": [
+    {
+      "id": "sigil_blade_song",
+      "name": "Blade Song",
+      "trigger": "onComboChain",
+      "effect": {
+        "gainArmor": 2,
+        "dealBonusDamage": 2
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "potion_of_renewal",
+      "slot": "consumable",
+      "quantity": 2
+    }
+  ],
+  "deck": {
+    "primarySet": "sword_fighter",
+    "cardSets": [
+      "dreamcaster",
+      "sword_fighter",
+      "axe_wielder_dwarf",
+      "elf_archer"
+    ]
+  },
+  "abilities": [
+    {
+      "id": "ability_guardian_reposte",
+      "cooldown": 2,
+      "effect": {
+        "gainArmor": 4,
+        "dealDamage": 6
+      }
+    }
+  ],
+  "progression": {
+    "startingLevel": 1,
+    "maxLevel": 10,
+    "levelRewards": {
+      "3": {
+        "unlockCard": "card_sword_fighter_07"
+      },
+      "7": {
+        "unlockSigil": "sigil_warding_tempest"
+      }
+    }
+  },
+  "storyHooks": [
+    "Defender of the Tempest Bastion.",
+    "Bound by oath to shield the Dreamcasters."
+  ],
+  "metadata": {
+    "portrait": "art/heroes/sword_fighter.png",
+    "rarity": "rare"
+  }
+}

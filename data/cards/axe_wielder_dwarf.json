@@ -1,0 +1,227 @@
+[
+  {
+    "id": "card_axe_dwarf_01",
+    "name": "Stonebreaker Chop",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 1,
+    "type": "attack",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 9 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_01_plus",
+        "effect": { "dealDamage": 12, "applyStatus": { "bleed": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_02",
+    "name": "Granite Guard",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 1 },
+    "effect": { "gainArmor": 7 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_02_plus",
+        "effect": { "gainArmor": 10, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_03",
+    "name": "Tunnel Charge",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 1,
+    "type": "attack",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 8, "move": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_03_plus",
+        "effect": { "dealDamage": 11, "move": 1, "gainArmor": 3 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_04",
+    "name": "Molten Core Brew",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 1 },
+    "effect": { "heal": 5, "gainArmor": 4 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_04_plus",
+        "effect": { "heal": 7, "gainArmor": 5 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_05",
+    "name": "Seismic Smash",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 13, "splashDamage": 5 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_05_plus",
+        "effect": { "dealDamage": 15, "splashDamage": 7 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_06",
+    "name": "Runic Bulwark",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 2,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "gainArmor": 14, "cleanse": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_06_plus",
+        "effect": { "gainArmor": 16, "cleanse": 1, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_07",
+    "name": "Forge Spark",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 0 },
+    "effect": { "gainArmor": 3, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_07_plus",
+        "effect": { "gainArmor": 4, "regainMana": 1, "dealDamage": 3 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_08",
+    "name": "Hammerfist Slam",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 11, "stun": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_08_plus",
+        "effect": { "dealDamage": 13, "stun": 1, "gainArmor": 4 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_09",
+    "name": "Earthen Resonance",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 2,
+    "type": "skill",
+    "cost": { "mana": 3 },
+    "effect": { "gainArmor": 12, "heal": 6, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_09_plus",
+        "effect": { "gainArmor": 15, "heal": 7, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_10",
+    "name": "Cleaving Vortex",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 2,
+    "type": "attack",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 12, "repeat": 1 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_10_plus",
+        "effect": { "dealDamage": 14, "repeat": 2 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_11",
+    "name": "Lavablood Roar",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 3,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "applyStatus": { "enrage": 1 }, "gainArmor": 6 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_11_plus",
+        "effect": { "applyStatus": { "enrage": 2 }, "gainArmor": 7 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_12",
+    "name": "Cragfall",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 4 },
+    "effect": { "dealDamage": 20 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_12_plus",
+        "effect": { "dealDamage": 24, "splashDamage": 6 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_13",
+    "name": "Anvil Stance",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 3,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "gainArmor": 18, "reflectDamage": 5 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_13_plus",
+        "effect": { "gainArmor": 20, "reflectDamage": 8 }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_14",
+    "name": "Faultline Rend",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 4 },
+    "effect": { "dealDamage": 18, "applyStatus": { "fracture": 1 } },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_14_plus",
+        "effect": { "dealDamage": 21, "applyStatus": { "fracture": 2 } }
+      }
+    ]
+  },
+  {
+    "id": "card_axe_dwarf_15",
+    "name": "Cataclysmic Cleave",
+    "archetype": "axe_wielder_dwarf",
+    "tier": 3,
+    "type": "attack",
+    "cost": { "mana": 5 },
+    "effect": { "dealDamage": 28, "gainArmor": 6 },
+    "upgrades": [
+      {
+        "id": "card_axe_dwarf_15_plus",
+        "effect": { "dealDamage": 32, "gainArmor": 8 }
+      }
+    ]
+  }
+]

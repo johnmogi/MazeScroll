@@ -1,0 +1,72 @@
+{
+  "id": "hero_elf_archer",
+  "name": "Syliren Windwhisper",
+  "class": "Elf Archer",
+  "stats": {
+    "maxHealth": 34,
+    "health": 34,
+    "maxMana": 7,
+    "mana": 7,
+    "attack": 6,
+    "armor": 3
+  },
+  "sigils": [
+    {
+      "id": "sigil_emberleaf_focus",
+      "name": "Emberleaf Focus",
+      "trigger": "onRangedAttack",
+      "effect": {
+        "dealBonusDamage": 2,
+        "gainMana": 1
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "quiver_of_glimmershots",
+      "slot": "gear",
+      "quantity": 1
+    }
+  ],
+  "deck": {
+    "primarySet": "elf_archer",
+    "cardSets": [
+      "dreamcaster",
+      "sword_fighter",
+      "axe_wielder_dwarf",
+      "elf_archer"
+    ]
+  },
+  "abilities": [
+    {
+      "id": "ability_split_the_breeze",
+      "cooldown": 2,
+      "effect": {
+        "dealDamage": 5,
+        "applyStatus": {
+          "marked": 1
+        }
+      }
+    }
+  ],
+  "progression": {
+    "startingLevel": 1,
+    "maxLevel": 10,
+    "levelRewards": {
+      "3": {
+        "unlockCard": "card_elf_archer_04"
+      },
+      "7": {
+        "unlockSigil": "sigil_starlit_trail"
+      }
+    }
+  },
+  "storyHooks": [
+    "Scout of the Everhaze groves, tracking Weaver-born anomalies.",
+    "Seeks to reclaim the lost Starlit Trail arrows."
+  ],
+  "metadata": {
+    "portrait": "art/heroes/elf_archer.png",
+    "rarity": "epic"
+  }
+}

@@ -1,0 +1,227 @@
+[
+  {
+    "id": "card_dreamcaster_01",
+    "name": "Lucid Bolt",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "spell",
+    "cost": { "mana": 2 },
+    "effect": { "dealDamage": 6, "applyStatus": { "daze": 1 } },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_01_plus",
+        "effect": { "dealDamage": 9, "applyStatus": { "daze": 2 } }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_02",
+    "name": "Oneiric Shield",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "spell",
+    "cost": { "mana": 1 },
+    "effect": { "gainArmor": 5 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_02_plus",
+        "effect": { "gainArmor": 7, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_03",
+    "name": "Sleepwalk",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "move": 1, "applyStatus": { "sleep": 1 } },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_03_plus",
+        "effect": { "move": 2, "applyStatus": { "sleep": 1, "slow": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_04",
+    "name": "Dream Lattice",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "spell",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 5, "drawCard": 1, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_04_plus",
+        "effect": { "dealDamage": 7, "drawCard": 2, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_05",
+    "name": "Cocoon of Echoes",
+    "archetype": "dreamcaster",
+    "tier": 2,
+    "type": "spell",
+    "cost": { "mana": 3 },
+    "effect": { "gainArmor": 10, "applyStatus": { "reflect": 1 } },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_05_plus",
+        "effect": { "gainArmor": 12, "applyStatus": { "reflect": 1, "ward": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_06",
+    "name": "Nightmare Pulse",
+    "archetype": "dreamcaster",
+    "tier": 2,
+    "type": "spell",
+    "cost": { "mana": 4 },
+    "effect": { "dealDamage": 12, "applyStatus": { "fear": 1 } },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_06_plus",
+        "effect": { "dealDamage": 15, "applyStatus": { "fear": 1, "vulnerable": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_07",
+    "name": "REM Surge",
+    "archetype": "dreamcaster",
+    "tier": 2,
+    "type": "spell",
+    "cost": { "mana": 3 },
+    "effect": { "regainMana": 2, "drawCard": 2 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_07_plus",
+        "effect": { "regainMana": 3, "drawCard": 2, "reduceCost": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_08",
+    "name": "Hypnic Jolt",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "attack",
+    "cost": { "mana": 1 },
+    "effect": { "dealDamage": 5, "gainArmor": 2 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_08_plus",
+        "effect": { "dealDamage": 8, "gainArmor": 2 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_09",
+    "name": "Illusory Duplicate",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 2 },
+    "effect": { "summon": "illusory_clone", "gainArmor": 3 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_09_plus",
+        "effect": { "summon": "illusory_clone_plus", "gainArmor": 5 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_10",
+    "name": "Lullaby Wave",
+    "archetype": "dreamcaster",
+    "tier": 2,
+    "type": "spell",
+    "cost": { "mana": 4 },
+    "effect": { "applyStatus": { "sleep": 1 }, "heal": 6 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_10_plus",
+        "effect": { "applyStatus": { "sleep": 2 }, "heal": 8 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_11",
+    "name": "Astral Step",
+    "archetype": "dreamcaster",
+    "tier": 1,
+    "type": "skill",
+    "cost": { "mana": 0 },
+    "effect": { "move": 1, "drawCard": 1 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_11_plus",
+        "effect": { "move": 1, "drawCard": 1, "regainMana": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_12",
+    "name": "Echo Infusion",
+    "archetype": "dreamcaster",
+    "tier": 3,
+    "type": "spell",
+    "cost": { "mana": 5 },
+    "effect": { "duplicateCard": 1, "regainMana": 2 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_12_plus",
+        "effect": { "duplicateCard": 1, "regainMana": 3, "drawCard": 1 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_13",
+    "name": "Mindspike",
+    "archetype": "dreamcaster",
+    "tier": 2,
+    "type": "spell",
+    "cost": { "mana": 3 },
+    "effect": { "dealDamage": 11 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_13_plus",
+        "effect": { "dealDamage": 14, "applyStatus": { "fracture": 1 } }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_14",
+    "name": "Waking Reversal",
+    "archetype": "dreamcaster",
+    "tier": 3,
+    "type": "spell",
+    "cost": { "mana": 5 },
+    "effect": { "cleanse": 2, "reflectDamage": 10 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_14_plus",
+        "effect": { "cleanse": 2, "reflectDamage": 14 }
+      }
+    ]
+  },
+  {
+    "id": "card_dreamcaster_15",
+    "name": "Oracle's Beacon",
+    "archetype": "dreamcaster",
+    "tier": 3,
+    "type": "spell",
+    "cost": { "mana": 4 },
+    "effect": { "scry": 3, "drawCard": 1, "regainMana": 1 },
+    "upgrades": [
+      {
+        "id": "card_dreamcaster_15_plus",
+        "effect": { "scry": 4, "drawCard": 2, "regainMana": 1 }
+      }
+    ]
+  }
+]

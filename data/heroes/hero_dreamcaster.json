@@ -1,0 +1,72 @@
+{
+  "id": "hero_dreamcaster",
+  "name": "Aurora Veilweaver",
+  "class": "Dreamcaster",
+  "stats": {
+    "maxHealth": 32,
+    "health": 32,
+    "maxMana": 10,
+    "mana": 10,
+    "attack": 4,
+    "armor": 2
+  },
+  "sigils": [
+    {
+      "id": "sigil_oneiric_pulse",
+      "name": "Oneiric Pulse",
+      "trigger": "onSpellCast",
+      "effect": {
+        "regainMana": 1,
+        "drawCard": 1
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "phial_of_lucidity",
+      "slot": "consumable",
+      "quantity": 2
+    }
+  ],
+  "deck": {
+    "primarySet": "dreamcaster",
+    "cardSets": [
+      "dreamcaster",
+      "sword_fighter",
+      "axe_wielder_dwarf",
+      "elf_archer"
+    ]
+  },
+  "abilities": [
+    {
+      "id": "ability_dreamshift",
+      "cooldown": 3,
+      "effect": {
+        "gainArmor": 3,
+        "applyStatus": {
+          "sleep": 1
+        }
+      }
+    }
+  ],
+  "progression": {
+    "startingLevel": 1,
+    "maxLevel": 10,
+    "levelRewards": {
+      "3": {
+        "unlockCard": "card_dreamcaster_05"
+      },
+      "6": {
+        "unlockSigil": "sigil_twilight_resonance"
+      }
+    }
+  },
+  "storyHooks": [
+    "Wanders the Echoing Vault collecting fragments of dreamlight.",
+    "Bound to guide lost souls through the Weaver's nightmares."
+  ],
+  "metadata": {
+    "portrait": "art/heroes/dreamcaster.png",
+    "rarity": "epic"
+  }
+}
